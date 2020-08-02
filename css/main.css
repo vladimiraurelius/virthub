@@ -493,6 +493,36 @@ a, a:hover {
 .war-text{		
 	color: #dc8d4e;/*|||||||||||||||||||||||||||||||Основной оранжевый*/
 }
+.profile__photo{
+	position: relative;
+}
+.profile__photo__title{	
+	position: absolute;
+	bottom: 50rem;
+	left: 4rem;	
+	font-size: 6rem;
+	font-style: italic;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #fff;
+	text-shadow: 1px 1px 3px #000000;
+}
+.profile__photo__cat{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 50%;
+	position: absolute;
+	bottom: 40rem;
+	left: 4rem;
+	font-size: 3rem;
+	font-style: italic;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;			
+	color:  #dc8d4e;/*|||||||||||||||||||||||||||||||Основной оранжевый*/
+	text-shadow: 1px 1px 3px #000000;
+}
+
+.profile__photo__cat p{
+	margin-right: 1rem;
+}
 
 .main-photo{
 	display: block;
@@ -531,6 +561,14 @@ a, a:hover {
 	margin-right: 2rem;
 	border: 1px solid #fff;
 }
+
+/* ||||||||||||||FOOTER|||||||||| */
+.footer{
+	padding: 2rem 0;	
+	background-color: #302f2f;
+}
+
+
 
 /* ||||||||||||MEDIAS||||||||||||| */
 @media screen and (max-width: 1700px){
