@@ -1,42 +1,34 @@
-const tabs = (headerSelector, tabSelector, contentSelector, activeClass) =>{
-    const header = document.querySelector(headerSelector);
-    const tab = document.querySelectorAll(tabSelector);
-    const content = document.querySelectorAll(contentSelector);
 
-    function hideTabContent() {
-        content.forEach(item =>{
-            item.style.display = "none";
-        });
 
-        tab.forEach(item => {
-            item.classList.remove(activeClass);
-        });
 
-    }
 
-    function showTabContent(i = 0) {
-        content[i].style.display = 'flex';
-        tab[i].classList.add(activeClass);
-    }
 
-    hideTabContent();
-    showTabContent();
+// const interval = setInterval(nextSlide, 3000);
 
-    header.addEventListener('click', (e) => {
-        const target = e.target;
+const mobileMenuBtn = document.querySelector('.menu__link');
+const mobileMenuWindow = document.querySelector('.menu-mobile');
+const mobileMenuWrapper = document.querySelector('.menu-wrapper');
+const menuLine1 = document.querySelector('.menu__line-1');
+const menuLine2 = document.querySelector('.menu__line-2');
+const menuLine3 = document.querySelector('.menu__line-3');
 
-        if (target.classList.contains(tabSelector.replace(/\./, "")) || 
-            target.parentNode.classList.contains(tabSelector.replace(/\./, ""))
-            ) {
-                tab.forEach((item, i) => {
-                    if (target == item || target.parentNode == item){
-                        hideTabContent();
-                        showTabContent(i);
-                    }
-                });
-            }
-    });
-    
-};
+function changeState (){
+    mobileMenuWrapper.classList.toggle('menu-wrapper--active');
+    mobileMenuWindow.classList.toggle('menu-mobile--active');
+    menuLine1.classList.toggle('menu__line-1--pending');
+    menuLine2.classList.toggle('menu__line-2--pending');
+    menuLine3.classList.toggle('menu__line-3--pending');    
+}
 
-tabs('.tabs-title', '.tabs-title__name', '.tabs-content', 'tabs-title__name--active');
+mobileMenuBtn.addEventListener('click',changeState);
+
+
+const categoryBtn = document.querySelector('.search__cat');
+const categoryItem = document.querySelector('.category');
+
+function showCategory (){
+    categoryBtn.classList.toggle('search__cat--active');
+    categoryItem.classList.toggle('category--active');
+}
+
+categoryBtn.addEventListener('click',showCategory);

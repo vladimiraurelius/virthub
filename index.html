@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css\main.css" rel="stylesheet">
+    <link href="css\fonts.css" rel="stylesheet">
     <title>virtHub</title>
 </head>
-<body>
+<body>    
     <!-- Блок header -->
     <header class="header">
         <!-- Блок  навигации по сайту -->
-        <nav class="nav">            
-
-            <!-- Мобильное меню -->
-            <ul class="menu-mobile">                
-            </ul>
+        <nav class="nav">
+            <!-- Мобильное меню -->            
+                <div class="menu-wrapper">
+                    <ul class="menu-mobile">                
+                        <li class="menu-mobile__item control-buttons">
+                            <div class="control-button"><span class="control-button__icon icon-enter"></span><p class="control-button_text">Вход</p></div>
+                            <div class="control-button"><span class="control-button__icon icon-clipboard"></span><p class="control-button_text">Регистрация</p></div>
+                            <div class="control-button"><span class="control-button__icon icon-search"></span><p class="control-button_text">Поиск</p></div>
+                        </li>                
+                        <li class="menu-mobile__item">Форум</li>
+                        <li class="menu-mobile__item"><a class="main-link" href="index.html">Главная</a></li>
+                        <li class="menu-mobile__item">LiveЧат</li>
+                        <li class="menu-mobile__item">Вип модели</li>
+                        <li class="menu-mobile__item">Модели онлайн</li>
+                        <li class="menu-mobile__item">Контакты</li>
+                    </ul>   
+                </div>        
             <!-- /Мобильное меню -->
             
             <!-- Класическое меню в шапке сайта -->
@@ -28,909 +41,180 @@
                     </a>
                 </li>
                 <!-- /Кнопка для мобильного меню -->               
-                <li class="menu__item"><a class="menu__link" href="#">Войти</a></li>
-                <li class="menu__item"><a class="menu__link" href="#"><span class="menu__excerpt">Live</span>Чат</a></li>                
+                <li class="menu__item menu__item-media"><a class="menu__link" href="#">Войти</a></li>
+                <li class="menu__item menu__item-media"><a class="menu__link" href="#"><span class="menu__excerpt">Live</span>Чат</a></li>                
             </ul>
             <!-- /Класическое меню в шапке сайта -->
-
         </nav>
         <!-- Блок  навигации по сайту -->
-        
+                
         <!-- Логотип сайта -->
         <div class="logo logo-main">virt<span class="logo__excerpt">Hub</span></div>
         <!-- /Логотип сайта -->
-
         <!-- Блок для формы поиска  -->
-        <div class="search">
-            <div class="search__btn"><img class="search__img" src="img/search.png" alt="search"></div>
-            <div class="search__form"></div> 
+        <div class="search">            
+            <form class="search__form">
+                <input class="search__input" type="text" placeholder="Поиск...">
+                <button class="search__btn icon-search"></button>
+            </form> 
             <!-- Блок для категорий  -->
-            <div class="search__cat">
-                <span class="search__dot-1"></span>
-                <span class="search__dot-2"></span>
-                <span class="search__dot-3"></span>
+            <div class="search__cat icon-list2">                
             </div>
-            <!-- /Блок для категорий  -->  
-                 
+            <!-- /Блок для категорий  -->
+            <div class="category-wrapper">
+                <ul class="category">
+                    <li class="category__item">#Litle</li>
+                    <li class="category__item">#Julia</li>
+                    <li class="category__item">#Wanted</li>
+                    <li class="category__item">#Livefor</li>
+                    <li class="category__item">#Henryford</li>
+                </ul>
+            </div>                            
         </div>
         <!-- /Блок для формы поиска -->
+        
     </header>
     <!-- /Блок header  -->
 
     <!-- Блок main -->
     <main class="main">
+        <h1 class="h1">Проверенные вирт модели для онлайн развлечений</h1>
+        <h2 class="h2">Виртуальный секс онлайн по скайпу и вайберу</h2>
         <!-- Закладки для категорий анкет -->
         <div class="tabs">
-            <!-- Заголовки для закладок категорий -->
+            <!-- START|||Заголовки для категорий -->
             <div class="tabs-title">
-                <div class="tabs-title__name"><img class="tabs-title__img" src="img/online.png" alt="online">Онлайн</div>
-                <div class="tabs-title__name"><img class="tabs-title__img" src="img/newest.png" alt="new">Новенькие</div>
-                <div class="tabs-title__name"><img class="tabs-title__img" src="img/vip.png" alt="vip">VIPМодели</div>
+                <div class="tabs-title__name"><span class="tabs-tittle__icon icon-connection"></span>Онлайн</div>
+                <div class="tabs-title__name"><span class="tabs-tittle__icon icon-power"></span>Новенькие</div>
+                <div class="tabs-title__name"><span class="tabs-tittle__icon icon-star-empty"></span>VIPМодели</div>
             </div>
-            <!-- /Заголовки для закладок категорий-->
-       
-            <!-- Анкеты относящиеся к данным категориям -->
-            <div class="tabs-content">
-
-                
-                <div class="tabs-content__inner profile-preview">
-                   
-                        <div class="profile-preview__head">
-                            <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-                            <div class="profile-preview__state">online...</div>                            
-                        </div> 
-
-                        <div class="profile-preview__photo">
-                            <img class="profile-preview__img" src="img/mini/mini_1.png" alt="photo">
-                        </div>
-                         
-                        <div class="profile-preview__info">
-                            <div class="profile-preview__name">Prokaznica</div>
-                            <ul class="profile-preview__social">
-                                <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                                <li class="profile-preview__icon  profile-preview__icon--current icon-telegram"></li>
-                                <li class="profile-preview__icon  profile-preview__icon--current icon-skype"></li></li>
-                                <li class="profile-preview__icon icon-whatsapp"></li>
-                            </ul>
-                        </div>  
-                                    
-                </div><!--tabs-content__inner-->                
-                
-                <div class="tabs-content__inner profile-preview">
-                   
-                    <div class="profile-preview__head">
-                        <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-                        <div class="profile-preview__state">online...</div>                            
-                    </div> 
-
-                    <div class="profile-preview__photo">
-                        <img class="profile-preview__img" src="img/mini/mini_2.png" alt="photo">
-                    </div>
-                     
-                    <div class="profile-preview__info">
-                        <div class="profile-preview__name">VeronicaVirt</div>
-                        <ul class="profile-preview__social">
-                            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                            <li class="profile-preview__icon icon-telegram"></li>
-                            <li class="profile-preview__icon icon-skype"></li></li>
-                            <li class="profile-preview__icon icon-whatsapp"></li>
-                        </ul>
-                    </div>  
-                                
-                </div><!--tabs-content__inner-->                
-                
-                <div class="tabs-content__inner profile-preview">
-                   
-                <div class="profile-preview__head">
-                    <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-                    <div class="profile-preview__state">online...</div>                            
-                </div> 
-
-                <div class="profile-preview__photo">
-                    <img class="profile-preview__img" src="img/mini/mini_3.png" alt="photo">
-                </div>
-                 
-                <div class="profile-preview__info">
-                    <div class="profile-preview__name">Maloshka</div>
-                    <ul class="profile-preview__social">
-                        <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                        <li class="profile-preview__icon icon-telegram"></li>
-                        <li class="profile-preview__icon icon-skype"></li></li>
-                        <li class="profile-preview__icon icon-whatsapp"></li>
-                    </ul>
-                </div>  
-                            
-                </div><!--tabs-content__inner-->                
-               
-                <div class="tabs-content__inner profile-preview">
-                   
-            <div class="profile-preview__head">
-                <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-                <div class="profile-preview__state">online...</div>                            
-            </div> 
-
-            <div class="profile-preview__photo">
-                <img class="profile-preview__img" src="img/mini/mini_4.png" alt="photo">
-            </div>
-             
-            <div class="profile-preview__info">
-                <div class="profile-preview__name">Veronica</div>
-                <ul class="profile-preview__social">
-                    <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                    <li class="profile-preview__icon icon-telegram"></li>
-                    <li class="profile-preview__icon profile-preview__icon--current icon-skype"></li></li>
-                    <li class="profile-preview__icon icon-whatsapp"></li>
-                </ul>
-            </div>  
-                        
-                </div><!--tabs-content__inner-->                
-                
-                <div class="tabs-content__inner profile-preview">
-                   
-        <div class="profile-preview__head">
-            <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-            <div class="profile-preview__state">online...</div>                            
-        </div> 
-
-        <div class="profile-preview__photo">
-            <img class="profile-preview__img" src="img/mini/mini_5.png" alt="photo">
+            <!-- END|||Заголовки для категорий-->
         </div>
-         
-        <div class="profile-preview__info">
-            <div class="profile-preview__name">Loli_Nezhnaja</div>
-            <ul class="profile-preview__social">
-                <li class="profile-preview__icon  icon-viber"></li>
-                <li class="profile-preview__icon icon-telegram"></li>
-                <li class="profile-preview__icon  profile-preview__icon--current icon-skype"></li></li>
-                <li class="profile-preview__icon  profile-preview__icon--current icon-whatsapp"></li>
-            </ul>
-        </div>  
-                    
-                </div><!--tabs-content__inner-->                
-            
-                <div class="tabs-content__inner profile-preview">
-                   
-    <div class="profile-preview__head">
-        <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-        <div class="profile-preview__state"></div>                            
-    </div> 
-
-    <div class="profile-preview__photo">
-        <img class="profile-preview__img" src="img/mini/mini_6.png" alt="photo">
-    </div>
-     
-    <div class="profile-preview__info">
-        <div class="profile-preview__name">GalinaRazvrat</div>
-        <ul class="profile-preview__social">
-            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-            <li class="profile-preview__icon icon-telegram"></li>
-            <li class="profile-preview__icon icon-skype"></li></li>
-            <li class="profile-preview__icon icon-whatsapp"></li>
-        </ul>
-    </div>  
-                
-                </div><!--tabs-content__inner-->                
-                
-                <div class="tabs-content__inner profile-preview">
-                   
-    <div class="profile-preview__head">
-        <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-        <div class="profile-preview__state">online...</div>                            
-    </div> 
-
-    <div class="profile-preview__photo">
-        <img class="profile-preview__img" src="img/mini/mini_7.png" alt="photo">
-    </div>
-     
-    <div class="profile-preview__info">
-        <div class="profile-preview__name">Baby</div>
-        <ul class="profile-preview__social">
-            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-            <li class="profile-preview__icon profile-preview__icon--current icon-telegram"></li>
-            <li class="profile-preview__icon profile-preview__icon--current icon-skype"></li></li>
-            <li class="profile-preview__icon profile-preview__icon--current icon-whatsapp"></li>
-        </ul>
-    </div>  
-                
-                </div><!--tabs-content__inner-->                
-                
-                <div class="tabs-content__inner profile-preview">
-                   
-    <div class="profile-preview__head">
-        <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-        <div class="profile-preview__state">online...</div>                            
-    </div> 
-
-    <div class="profile-preview__photo">
-        <img class="profile-preview__img" src="img/mini/mini_8.png" alt="photo">
-    </div>
-     
-    <div class="profile-preview__info">
-        <div class="profile-preview__name">Anjelica</div>
-        <ul class="profile-preview__social">
-            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-            <li class="profile-preview__icon icon-telegram"></li>
-            <li class="profile-preview__icon icon-skype"></li></li>
-            <li class="profile-preview__icon icon-whatsapp"></li>
-        </ul>
-    </div>  
-                
-                </div><!--tabs-content__inner-->                
-                
-
-            </div><!--tabs-content-->
-
-
-            <div class="tabs-content">
-
-                <div class="tabs-content__inner profile-preview">
-                   
-                    <div class="profile-preview__head">
-                        <div class="logo logo-mod">virt<span class="logo__excerpt logo__excerpt-mod">Hub</span></div>                                                    
-                    </div> 
-                
-                    <div class="profile-preview__photo profile-preview__photo-mod">
-                        <img class="profile-preview__img" src="img/mini/mini_9.png" alt="photo">
-                        <div class="profile-preview__state-mod">online...</div>
-                    </div>
-                     
-                    <div class="profile-preview__info">
-                        <div class="profile-preview__name">Svetazvezdamineta</div>
-                        <ul class="profile-preview__social profile-preview__social-mod">
-                            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                            <li class="profile-preview__icon profile-preview__icon--current icon-telegram"></li>
-                            <li class="profile-preview__icon profile-preview__icon--current icon-skype"></li></li>
-                            <li class="profile-preview__icon profile-preview__icon--current icon-whatsapp"></li>
-                        </ul>
-                    </div>  
-                                
-                </div><!--tabs-content__inner-->
-                
-                <div class="tabs-content__inner profile-preview">
-                   
-                    <div class="profile-preview__head">
-                        <div class="logo logo-mod">virt<span class="logo__excerpt logo__excerpt-mod">Hub</span></div>                                                    
-                    </div> 
-                
-                    <div class="profile-preview__photo profile-preview__photo-mod">
-                        <img class="profile-preview__img" src="img/mini/mini_10.png" alt="photo">
-                        <div class="profile-preview__state-mod"></div>
-                    </div>
-                     
-                    <div class="profile-preview__info">
-                        <div class="profile-preview__name">Basicmodel</div>
-                        <ul class="profile-preview__social profile-preview__social-mod">
-                            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                            <li class="profile-preview__icon profile-preview__icon--current icon-telegram"></li>
-                            <li class="profile-preview__icon icon-skype"></li></li>
-                            <li class="profile-preview__icon profile-preview__icon--current icon-whatsapp"></li>
-                        </ul>
-                    </div>  
-                                
-                </div><!--tabs-content__inner--> 
-
-                <div class="tabs-content__inner profile-preview">
-                   
-                    <div class="profile-preview__head">
-                        <div class="logo logo-mod">virt<span class="logo__excerpt logo__excerpt-mod">Hub</span></div>                                                    
-                    </div> 
-                
-                    <div class="profile-preview__photo profile-preview__photo-mod">
-                        <img class="profile-preview__img" src="img/mini/mini_11.png" alt="photo">
-                        <div class="profile-preview__state-mod">online...</div>
-                    </div>
-                     
-                    <div class="profile-preview__info">
-                        <div class="profile-preview__name">HappyMarta</div>
-                        <ul class="profile-preview__social profile-preview__social-mod">
-                            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                            <li class="profile-preview__icon icon-telegram"></li>
-                            <li class="profile-preview__icon icon-skype"></li></li>
-                            <li class="profile-preview__icon icon-whatsapp"></li>
-                        </ul>
-                    </div>  
-                                
-                </div><!--tabs-content__inner--> 
-
-                <div class="tabs-content__inner profile-preview">
-                   
-                    <div class="profile-preview__head">
-                        <div class="logo logo-mod">virt<span class="logo__excerpt logo__excerpt-mod">Hub</span></div>                                                    
-                    </div> 
-                
-                    <div class="profile-preview__photo profile-preview__photo-mod">
-                        <img class="profile-preview__img" src="img/mini/mini_12.png" alt="photo">
-                        <div class="profile-preview__state-mod">online...</div>
-                    </div>
-                     
-                    <div class="profile-preview__info">
-                        <div class="profile-preview__name">Nino</div>
-                        <ul class="profile-preview__social profile-preview__social-mod">
-                            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                            <li class="profile-preview__icon icon-telegram"></li>
-                            <li class="profile-preview__icon icon-skype"></li></li>
-                            <li class="profile-preview__icon icon-whatsapp"></li>
-                        </ul>
-                    </div>  
-                                
-                </div><!--tabs-content__inner--> 
-
-                <div class="tabs-content__inner profile-preview">
-                   
-                    <div class="profile-preview__head">
-                        <div class="logo logo-mod">virt<span class="logo__excerpt logo__excerpt-mod">Hub</span></div>                                                    
-                    </div> 
-                
-                    <div class="profile-preview__photo profile-preview__photo-mod">
-                        <img class="profile-preview__img" src="img/mini/mini_13.png" alt="photo">
-                        <div class="profile-preview__state-mod">online...</div>
-                    </div>
-                     
-                    <div class="profile-preview__info">
-                        <div class="profile-preview__name">Kukla_Sveta</div>
-                        <ul class="profile-preview__social profile-preview__social-mod">
-                            <li class="profile-preview__icon icon-viber"></li>
-                            <li class="profile-preview__icon icon-telegram"></li>
-                            <li class="profile-preview__icon icon-skype"></li></li>
-                            <li class="profile-preview__icon profile-preview__icon--current icon-whatsapp"></li>
-                        </ul>
-                    </div>  
-                                
-                </div><!--tabs-content__inner--> 
-
-                <div class="tabs-content__inner profile-preview">
-                   
-                    <div class="profile-preview__head">
-                        <div class="logo logo-mod">virt<span class="logo__excerpt logo__excerpt-mod">Hub</span></div>                                                    
-                    </div> 
-                
-                    <div class="profile-preview__photo profile-preview__photo-mod">
-                        <img class="profile-preview__img" src="img/mini/mini_14.png" alt="photo">
-                        <div class="profile-preview__state-mod">online...</div>
-                    </div>
-                     
-                    <div class="profile-preview__info">
-                        <div class="profile-preview__name">AlinaPrekrasna</div>
-                        <ul class="profile-preview__social profile-preview__social-mod">
-                            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                            <li class="profile-preview__icon profile-preview__icon--current icon-telegram"></li>
-                            <li class="profile-preview__icon profile-preview__icon--current icon-skype"></li></li>
-                            <li class="profile-preview__icon profile-preview__icon--current icon-whatsapp"></li>
-                        </ul>
-                    </div>  
-                                
-                </div><!--tabs-content__inner--> 
-
-                <div class="tabs-content__inner profile-preview">
-                   
-                    <div class="profile-preview__head">
-                        <div class="logo logo-mod">virt<span class="logo__excerpt logo__excerpt-mod">Hub</span></div>                                                    
-                    </div> 
-                
-                    <div class="profile-preview__photo profile-preview__photo-mod">
-                        <img class="profile-preview__img" src="img/mini/mini_15.png" alt="photo">
-                        <div class="profile-preview__state-mod">online...</div>
-                    </div>
-                     
-                    <div class="profile-preview__info">
-                        <div class="profile-preview__name">JuliaTop</div>
-                        <ul class="profile-preview__social profile-preview__social-mod">
-                            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                            <li class="profile-preview__icon icon-telegram"></li>
-                            <li class="profile-preview__icon icon-skype"></li></li>
-                            <li class="profile-preview__icon icon-whatsapp"></li>
-                        </ul>
-                    </div>  
-                                
-                </div><!--tabs-content__inner--> 
-
-                <div class="tabs-content__inner profile-preview">
-                   
-                    <div class="profile-preview__head">
-                        <div class="logo logo-mod">virt<span class="logo__excerpt logo__excerpt-mod">Hub</span></div>                                                    
-                    </div> 
-                
-                    <div class="profile-preview__photo profile-preview__photo-mod">
-                        <img class="profile-preview__img" src="img/mini/mini_16.png" alt="photo">
-                        <div class="profile-preview__state-mod">online...</div>
-                    </div>
-                     
-                    <div class="profile-preview__info">
-                        <div class="profile-preview__name">Krasotka</div>
-                        <ul class="profile-preview__social profile-preview__social-mod">
-                            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                            <li class="profile-preview__icon profile-preview__icon--current icon-telegram"></li>
-                            <li class="profile-preview__icon profile-preview__icon--current icon-skype"></li></li>
-                            <li class="profile-preview__icon icon-whatsapp"></li>
-                        </ul>
-                    </div>  
-                                
-                </div><!--tabs-content__inner--> 
-                
-            </div><!--tabs-content-->
-        
-            <div class="tabs-content">
-                <div class="tabs-content__inner profile-preview">
-                   
-                    <div class="profile-preview__head">
-                        <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-                        <div class="profile-preview__state">online...</div>                            
-                    </div> 
-
-                    <div class="profile-preview__photo">
-                        <img class="profile-preview__img" src="img/mini/mini_1.png" alt="photo">
-                    </div>
-                     
-                    <div class="profile-preview__info">
-                        <div class="profile-preview__name">Prokaznica</div>
-                        <ul class="profile-preview__social">
-                            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                            <li class="profile-preview__icon  profile-preview__icon--current icon-telegram"></li>
-                            <li class="profile-preview__icon  profile-preview__icon--current icon-skype"></li></li>
-                            <li class="profile-preview__icon icon-whatsapp"></li>
-                        </ul>
-                    </div>  
-                                
-            </div><!--tabs-content__inner-->                
-            
-            <div class="tabs-content__inner profile-preview">
-               
+        <!--||||Контент для категорий|||| -->
+        <div class="tabs-content">
+            <a class="tabs-content__inner profile-preview" href="profile.html">               
                 <div class="profile-preview__head">
-                    <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-                    <div class="profile-preview__state">online...</div>                            
-                </div> 
-
+                    <div class="logo logo-min">virt<span class="logo__excerpt logo__excerpt-min">Hub</span></div>                                                    
+                </div>            
                 <div class="profile-preview__photo">
                     <img class="profile-preview__img" src="img/mini/mini_2.png" alt="photo">
-                </div>
-                 
+                    <div class="profile-preview__state">online...</div>
+                </div>                 
                 <div class="profile-preview__info">
-                    <div class="profile-preview__name">VeronicaVirt</div>
+                    <div class="profile-preview__name">Svetazvezdamineta</div>
                     <ul class="profile-preview__social">
                         <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                        <li class="profile-preview__icon icon-telegram"></li>
-                        <li class="profile-preview__icon icon-skype"></li></li>
-                        <li class="profile-preview__icon icon-whatsapp"></li>
+                        <li class="profile-preview__icon profile-preview__icon--current icon-telegram"></li>
+                        <li class="profile-preview__icon profile-preview__icon--current icon-skype"></li></li>
+                        <li class="profile-preview__icon profile-preview__icon--current icon-whatsapp"></li>
                     </ul>
-                </div>  
-                            
-            </div><!--tabs-content__inner-->                
+                </div>                            
+            </a><!--tabs-content__inner profile-preview-->             
             
-            <div class="tabs-content__inner profile-preview">
-               
-            <div class="profile-preview__head">
-                <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-                <div class="profile-preview__state">online...</div>                            
-            </div> 
+        </div><!--tabs-content-->
 
-            <div class="profile-preview__photo">
-                <img class="profile-preview__img" src="img/mini/mini_3.png" alt="photo">
-            </div>
-             
-            <div class="profile-preview__info">
-                <div class="profile-preview__name">Maloshka</div>
-                <ul class="profile-preview__social">
-                    <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                    <li class="profile-preview__icon icon-telegram"></li>
-                    <li class="profile-preview__icon icon-skype"></li></li>
-                    <li class="profile-preview__icon icon-whatsapp"></li>
-                </ul>
-            </div>  
-                        
-            </div><!--tabs-content__inner-->                
-           
-            <div class="tabs-content__inner profile-preview">
-               
-        <div class="profile-preview__head">
-            <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-            <div class="profile-preview__state">online...</div>                            
-        </div> 
+        <div class="tabs-content">           
+        </div><!--tabs-content-->
 
-        <div class="profile-preview__photo">
-            <img class="profile-preview__img" src="img/mini/mini_4.png" alt="photo">
-        </div>
-         
-        <div class="profile-preview__info">
-            <div class="profile-preview__name">Veronica</div>
-            <ul class="profile-preview__social">
-                <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                <li class="profile-preview__icon icon-telegram"></li>
-                <li class="profile-preview__icon profile-preview__icon--current icon-skype"></li></li>
-                <li class="profile-preview__icon icon-whatsapp"></li>
-            </ul>
-        </div>  
-                    
-            </div><!--tabs-content__inner-->                
-            
-            <div class="tabs-content__inner profile-preview">
-               
-    <div class="profile-preview__head">
-        <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-        <div class="profile-preview__state">online...</div>                            
-    </div> 
-
-    <div class="profile-preview__photo">
-        <img class="profile-preview__img" src="img/mini/mini_5.png" alt="photo">
-    </div>
-     
-    <div class="profile-preview__info">
-        <div class="profile-preview__name">Loli_Nezhnaja</div>
-        <ul class="profile-preview__social">
-            <li class="profile-preview__icon  icon-viber"></li>
-            <li class="profile-preview__icon icon-telegram"></li>
-            <li class="profile-preview__icon  profile-preview__icon--current icon-skype"></li></li>
-            <li class="profile-preview__icon  profile-preview__icon--current icon-whatsapp"></li>
-        </ul>
-    </div>  
-                
-            </div><!--tabs-content__inner-->                
-        
-            <div class="tabs-content__inner profile-preview">
-               
-<div class="profile-preview__head">
-    <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-    <div class="profile-preview__state"></div>                            
-</div> 
-
-<div class="profile-preview__photo">
-    <img class="profile-preview__img" src="img/mini/mini_6.png" alt="photo">
-</div>
- 
-<div class="profile-preview__info">
-    <div class="profile-preview__name">GalinaRazvrat</div>
-    <ul class="profile-preview__social">
-        <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-        <li class="profile-preview__icon icon-telegram"></li>
-        <li class="profile-preview__icon icon-skype"></li></li>
-        <li class="profile-preview__icon icon-whatsapp"></li>
-    </ul>
-</div>  
-            
-            </div><!--tabs-content__inner-->                
-            
-            <div class="tabs-content__inner profile-preview">
-               
-<div class="profile-preview__head">
-    <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-    <div class="profile-preview__state">online...</div>                            
-</div> 
-
-<div class="profile-preview__photo">
-    <img class="profile-preview__img" src="img/mini/mini_7.png" alt="photo">
-</div>
- 
-<div class="profile-preview__info">
-    <div class="profile-preview__name">Baby</div>
-    <ul class="profile-preview__social">
-        <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-        <li class="profile-preview__icon profile-preview__icon--current icon-telegram"></li>
-        <li class="profile-preview__icon profile-preview__icon--current icon-skype"></li></li>
-        <li class="profile-preview__icon profile-preview__icon--current icon-whatsapp"></li>
-    </ul>
-</div>  
-            
-            </div><!--tabs-content__inner-->                
-            
-            <div class="tabs-content__inner profile-preview">
-               
-<div class="profile-preview__head">
-    <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-    <div class="profile-preview__state">online...</div>                            
-</div> 
-
-<div class="profile-preview__photo">
-    <img class="profile-preview__img" src="img/mini/mini_8.png" alt="photo">
-</div>
- 
-<div class="profile-preview__info">
-    <div class="profile-preview__name">Anjelica</div>
-    <ul class="profile-preview__social">
-        <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-        <li class="profile-preview__icon icon-telegram"></li>
-        <li class="profile-preview__icon icon-skype"></li></li>
-        <li class="profile-preview__icon icon-whatsapp"></li>
-    </ul>
-</div>  
-            
-            </div><!--tabs-content__inner-->   
-            
-            <div class="tabs-content__inner profile-preview">
-                   
-                <div class="profile-preview__head">
-                    <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-                    <div class="profile-preview__state">online...</div>                            
-                </div> 
-
-                <div class="profile-preview__photo">
-                    <img class="profile-preview__img" src="img/mini/mini_1.png" alt="photo">
-                </div>
-                 
-                <div class="profile-preview__info">
-                    <div class="profile-preview__name">Prokaznica</div>
-                    <ul class="profile-preview__social">
-                        <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                        <li class="profile-preview__icon  profile-preview__icon--current icon-telegram"></li>
-                        <li class="profile-preview__icon  profile-preview__icon--current icon-skype"></li></li>
-                        <li class="profile-preview__icon icon-whatsapp"></li>
-                    </ul>
-                </div>  
-                            
-        </div><!--tabs-content__inner-->                
-        
-        <div class="tabs-content__inner profile-preview">
-           
-            <div class="profile-preview__head">
-                <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-                <div class="profile-preview__state">online...</div>                            
-            </div> 
-
-            <div class="profile-preview__photo">
-                <img class="profile-preview__img" src="img/mini/mini_2.png" alt="photo">
-            </div>
-             
-            <div class="profile-preview__info">
-                <div class="profile-preview__name">VeronicaVirt</div>
-                <ul class="profile-preview__social">
-                    <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                    <li class="profile-preview__icon icon-telegram"></li>
-                    <li class="profile-preview__icon icon-skype"></li></li>
-                    <li class="profile-preview__icon icon-whatsapp"></li>
-                </ul>
-            </div>  
-                        
-        </div><!--tabs-content__inner-->                
-        
-        <div class="tabs-content__inner profile-preview">
-           
-        <div class="profile-preview__head">
-            <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-            <div class="profile-preview__state">online...</div>                            
-        </div> 
-
-        <div class="profile-preview__photo">
-            <img class="profile-preview__img" src="img/mini/mini_3.png" alt="photo">
-        </div>
-         
-        <div class="profile-preview__info">
-            <div class="profile-preview__name">Maloshka</div>
-            <ul class="profile-preview__social">
-                <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-                <li class="profile-preview__icon icon-telegram"></li>
-                <li class="profile-preview__icon icon-skype"></li></li>
-                <li class="profile-preview__icon icon-whatsapp"></li>
-            </ul>
-        </div>  
-                    
-        </div><!--tabs-content__inner-->                
-       
-        <div class="tabs-content__inner profile-preview">
-           
-    <div class="profile-preview__head">
-        <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-        <div class="profile-preview__state">online...</div>                            
-    </div> 
-
-    <div class="profile-preview__photo">
-        <img class="profile-preview__img" src="img/mini/mini_4.png" alt="photo">
-    </div>
-     
-    <div class="profile-preview__info">
-        <div class="profile-preview__name">Veronica</div>
-        <ul class="profile-preview__social">
-            <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-            <li class="profile-preview__icon icon-telegram"></li>
-            <li class="profile-preview__icon profile-preview__icon--current icon-skype"></li></li>
-            <li class="profile-preview__icon icon-whatsapp"></li>
-        </ul>
-    </div>  
-                
-        </div><!--tabs-content__inner-->                
-        
-        <div class="tabs-content__inner profile-preview">
-           
-<div class="profile-preview__head">
-    <div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-    <div class="profile-preview__state">online...</div>                            
-</div> 
-
-<div class="profile-preview__photo">
-    <img class="profile-preview__img" src="img/mini/mini_5.png" alt="photo">
-</div>
- 
-<div class="profile-preview__info">
-    <div class="profile-preview__name">Loli_Nezhnaja</div>
-    <ul class="profile-preview__social">
-        <li class="profile-preview__icon  icon-viber"></li>
-        <li class="profile-preview__icon icon-telegram"></li>
-        <li class="profile-preview__icon  profile-preview__icon--current icon-skype"></li></li>
-        <li class="profile-preview__icon  profile-preview__icon--current icon-whatsapp"></li>
-    </ul>
-</div>  
-            
-        </div><!--tabs-content__inner-->                
-    
-        <div class="tabs-content__inner profile-preview">
-           
-<div class="profile-preview__head">
-<div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-<div class="profile-preview__state"></div>                            
-</div> 
-
-<div class="profile-preview__photo">
-<img class="profile-preview__img" src="img/mini/mini_6.png" alt="photo">
-</div>
-
-<div class="profile-preview__info">
-<div class="profile-preview__name">GalinaRazvrat</div>
-<ul class="profile-preview__social">
-    <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-    <li class="profile-preview__icon icon-telegram"></li>
-    <li class="profile-preview__icon icon-skype"></li></li>
-    <li class="profile-preview__icon icon-whatsapp"></li>
-</ul>
-</div>  
-        
-        </div><!--tabs-content__inner-->                
-        
-        <div class="tabs-content__inner profile-preview">
-           
-<div class="profile-preview__head">
-<div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-<div class="profile-preview__state">online...</div>                            
-</div> 
-
-<div class="profile-preview__photo">
-<img class="profile-preview__img" src="img/mini/mini_7.png" alt="photo">
-</div>
-
-<div class="profile-preview__info">
-<div class="profile-preview__name">Baby</div>
-<ul class="profile-preview__social">
-    <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-    <li class="profile-preview__icon profile-preview__icon--current icon-telegram"></li>
-    <li class="profile-preview__icon profile-preview__icon--current icon-skype"></li></li>
-    <li class="profile-preview__icon profile-preview__icon--current icon-whatsapp"></li>
-</ul>
-</div>  
-        
-        </div><!--tabs-content__inner-->                
-        
-        <div class="tabs-content__inner profile-preview">
-           
-<div class="profile-preview__head">
-<div class="logo">virt<span class="logo__excerpt">Hub</span></div>
-<div class="profile-preview__state">online...</div>                            
-</div> 
-
-<div class="profile-preview__photo">
-<img class="profile-preview__img" src="img/mini/mini_8.png" alt="photo">
-</div>
-
-<div class="profile-preview__info">
-<div class="profile-preview__name">Anjelica</div>
-<ul class="profile-preview__social">
-    <li class="profile-preview__icon profile-preview__icon--current icon-viber"></li>
-    <li class="profile-preview__icon icon-telegram"></li>
-    <li class="profile-preview__icon icon-skype"></li></li>
-    <li class="profile-preview__icon icon-whatsapp"></li>
-</ul>
-</div>  
-        
-        </div><!--tabs-content__inner-->                
-        
-            
-            </div><!--tabs-content-->
-            <!-- /Анкеты относящиеся к данным категориям -->
-            
-        </div>
-        
-        <!-- /Закладки для категорий анкет -->
+        <div class="tabs-content">           
+        </div><!--tabs-content-->
+        <h3 class="h3">Случайный текст</h3>
+        <p class="main__text">
+С другой стороны, рамки и место обучения кадров позволяет выполнить 
+важные задания по разработке системы массового участия. Равном образом, реализация намеченных
+плановых заданий обеспечивают широкому кругу (специалистов) участие в формировании направлений
+прогрессивного развития. Не следует, однако, забывать, что сложивщиеся структура организации позволяет
+выполнить важные задания по разработке существенных финансовых и административных условий. Товарищи! 
+дальнейшее развитие различных форм деятельности играет важную роль в формировании дальнейших направлений 
+развития. Не следует, однако, забывать, что реализация намеченных плановых заданий способствуют подготовке
+и реализации существенных финансовых и административных условий. С другой стороны, новая модель организационной 
+деятельности требуют определения и уточнения направлений прогрессивного развития. Товарищи! реализация
+намеченных плановых заданий позволяет выполнить важные задания по разработке новых предложений.
+Повседневная практика показывает, что новая модель организационной деятельности обеспечивают 
+широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении
+поставленных задач. Товарищи! рамки и место обучения кадров требуют определения и уточнения 
+дальнейших направлений развития. Повседневная практика показывает, что дальнейшее развитие 
+различных форм деятельности обеспечивают широкому кругу (специалистов) участие в формировании 
+направлений прогрессивного развития. Таким образом, постоянный количественный рост и сфера
+нашей активности требуют от нас анализа существенных финансовых и административных условий. Не
+следует, однако, забывать, что рамки и место обучения кадров способствуют подготовке и реализации
+позиций, занимаемых участниками в отношении поставленных задач. Равном образом, сложивщиеся структура
+организации требуют определения и уточнения новых предложений. Не следует, однако, забывать, 
+что дальнейшее развитие различных форм деятельности способствуют подготовке и реализации
+направлений прогрессивного развития. С другой стороны, постоянный количественный 
+рост и сфера нашей активности позволяет выполнить важные задания по разработке системы 
+массового участия. Товарищи! рамки и место обучения кадров обеспечивают широкому кругу 
+(специалистов) участие в формировании новых предложений. Равном образом, сложивщиеся 
+структура организации способствуют подготовке и реализации направлений прогрессивного развития. 
+Таким образом, реализация намеченных плановых заданий требуют определения и уточнения позиций,
+занимаемых участниками в отношении поставленных задач. Равном образом, рамки и место обучения
+кадров обеспечивают широкому кругу (специалистов) участие в формировании новых предложений.
+Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности играет
+важную роль в формировании дальнейших направлений развития. Таким образом, новая модель
+организационной деятельности способствуют подготовке и реализации направлений прогрессивного 
+заданий требуют от нас анализа новых предложений. Таким образом, постоянный 
+количественный рост и сфера нашей активности обеспечивают широкому кругу (специалистов) 
+участие в формировании системы массового участия. Равном образом, реализация намеченных 
+плановых заданий позволяет выполнить важные задания по разработке направлений прогрессивного 
+развития. Таким образом, постоянный количественный рост и сфера нашей активности способствуют
+подготовке и реализации дальнейших направлений развития. С другой стороны, новая модель 
+организационной деятельности позволяет выполнить важные задания по разработке новых предложений.
+Товарищи! рамки и место обучения кадров требуют определения и уточнения системы массового участия. 
+Не следует, однако, забывать, что реализация намеченных плановых заданий обеспечивают широкому кругу (специалистов) участие в 
+формировании существенных финансовых и административных условий. С другой стороны, 
+дальнейшее развитие различных форм деятельности требуют от нас  анализа системы массового участия. 
+Товарищи! реализация намеченных плановых заданий позволяет  выполнить важные задания по 
+разработке существенных финансовых и административных условий.  Таким образом, новая модель 
+организационной деятельности требуют определения и уточнения   дальнейших направлений развития. 
+Повседневная практика показывает, что рамки и место обучения   кадров играет важную роль в формировании 
+новых предложений. Равном образом, реализация    намеченных плановых заданий способствуют подготовке и 
+реализации дальнейших направлений    развития. Товарищи! сложивщиеся структура организации обеспечивают широкому кругу 
+поставленных задач. Таким образом, рамки и место обучения кадров играет важную роль    в 
+формировании новых предложений. Равном образом, реализация намеченных плановых     заданий 
+позволяет выполнить важные задания по разработке позиций, занимаемых     участниками в отношении поставленных задач. 
+</p>                       
     </main>
     <!-- Блок main -->
 
-    <section>
-        <div class="profile">
-
-         <div class="profile__top">
-            <div class="profile__info">
-
-                <div class="profile__price">
-                    <p class="profile__price-title">Мой прайс</p>
-                    <p>Предпоказ платный<br>
-                        В белье 50руб/30 грн<br>                            
-                        Голой 100руб/50 грн<br>                         
-                        Вирт<br>                            
-                        5 мин 400р/160грн<br>                            
-                        10 мин 650р/280грн<br>                            
-                        15 мин 850р/390грн<br>                            
-                        20 мин 1100р/ 500грн вирт<br></p>
-                </div>
-
-                <div class="profile__price">
-                    <p class="profile__price-title">Дополнения</p>
-                    <p>Сквирт 200руб/100грн<br>
-                        Золотой дождик 250руб/125грн<br>                            
-                        Доминация 50руб/25грн<br>                         
-                        Двойное 250руб/125грн<br>                            
-                        Трусики в киску 250руб/125грн<br>                            
-                        Всё остальное обсуждаеться лично<br>                            
-                        15 мин 850р/390грн<br>                            
-                        20 мин 1100р/ 500грн вирт<br></p>
-                </div>
-
-                <div class="profile_about">
-                    
-                        <div class="profile_about__mer">
-                            <p class="profile__price-title">Немного о себе</p>
-                            <p>Грудь_<span class="war-text">3 розмер</span><br>
-                                Вес_<span class="war-text">50кг</span><br>                            
-                                Рост_<span class="war-text">167см</span><br>                         
-                                Возраст_<span class="war-text">30лет</span><br> 
-                            </p>
-                        </div>
-                        
-                        <div class="profile_about__social">
-                            <p class="profile__price-title">Мои контакты</p>
-                            <ul class="profile_about__icons">
-                                <li class="profile_about__icon icon-skype"></li>
-                                <li class="profile_about__icon icon-viber"></li>
-                                <li class="profile_about__icon icon-telegram"></li>
-                                <li class="profile_about__icon icon-whatsapp"></li>
-                        </div>
-                        
-                           
-                    
-                </div>
-
-            </div>
-
-            <div class="profile__photo">
-                <img class="main-photo" src="img/slider/slider_1.png" alt="" class="main-photo">
-                <div class="profile__photo__title">Sofia</div>
-                <div class="profile__photo__cat">
-                <p>#anal</p>
-                <p>#masachuset</p>
-                <p>#brutal</p>
-                <p>#faloso</p>
-                <p>#giant</p> 
-                <p>#sovite</p>                 
-                </div>
-                <p class="info-under-photo">Всем доброго времени суток! Я внешне привлекательная женщина, со стажем в вирте и 
-                    реале(было много поклонников)Испытываю страсть к Доминации и приручению своих 
-                    малышек) Рада буду видеть тебя в свое?м мире похоти и разврата!У меня реала нет, но 
-                    есть толковый вирт с большим количеством одежды обуви и игрушек! Жду в гости)
-                    Опятная, развратная домина, ищет для себя покорного мальчика(раба шлюшку, девочку)
-                    для исполнения прихотей,предпочитаю послушных и погруженных в тему.
-                    Использую практики:Контроль дрочки,игры с аналом,Страпон,Чмор,Унижения.</p>
-            </div>
-
-        
-         </div>
-         
-            <div class="profile__bottom">
-                <img class="profile__img" src="img/slider/slider_5.png" alt="photo">
-                <img class="profile__img" src="img/slider/slider_2.png" alt="photo">
-                <img class="profile__img" src="img/slider/slider_3.png" alt="photo">
-                <img class="profile__img" src="img/slider/slider_4.png" alt="photo">
-                <img class="profile__img" src="img/slider/slider_1.png" alt="photo">
-                <img class="profile__img" src="img/slider/slider_7.png" alt="photo">
-            </div>
-
-        </div><!---->
-    </section>
+    
 
     <footer class="footer">
-        <!-- Класическое меню в шапке сайта -->
-        <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#"><span class="menu__excerpt">Live</span>Чат</a></li>                          
-            <li class="menu__item"><a class="menu__link" href="#">Обратная связь</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Сообщить об ошибке</a></li>
-                         
-                            
-        </ul>
-        <!-- /Класическое меню в шапке сайта -->
+
+        <div class="footer-item">
+            <h5 class="footer-item__title">Карта сайта</h5>
+            <ul class="footer-item__content">
+                <li class="footer-item__li"><a class="footer-item__link">Главная</a></li>
+                <li class="footer-item__li"><a class="footer-item__link">Войти</a></li>
+                <li class="footer-item__li"><a class="footer-item__link">Зарегестрироватся</a></li>
+                <li class="footer-item__li"><a class="footer-item__link">Контакты</a></li>
+                <li class="footer-item__li"><a class="footer-item__link">LiveЧат</a></li>
+            </ul>
+        </div>
+
+            <div class="footer-item">
+                <h5 class="footer-item__title">Популярные категории</h5>
+                <ul class="footer-item__content">
+                    <li class="footer-item__li"><a class="footer-item__link">Убедитесь</a></li>
+                    <li class="footer-item__li"><a class="footer-item__link">использовать</a></li>
+                    <li class="footer-item__li"><a class="footer-item__link">Зарегестрироватся</a></li>
+                    <li class="footer-item__li"><a class="footer-item__link">Попробуйте</a></li>
+                    <li class="footer-item__li"><a class="footer-item__link">ключевые</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                    <h5 class="footer-item__title">Сообщение администратору сайта</h5>
+                    <form class="form" action="#">
+                        <textarea class="form__message" type="text" rows="5" placeholder="Введите сообщение"></textarea>
+                        <button class="form__button">Отправить</button>
+                    </form>
+            </div>
+        
+        
+        
     </footer>
     
-<script src="js/main.js"></script>    
+<script src="js/main.js"></script>
+<script src="js/tabs.js"></script>   
 </body>
 </html>
