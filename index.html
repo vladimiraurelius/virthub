@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="css\main.css" rel="stylesheet">
     <link href="css\fonts.css" rel="stylesheet">
     <title>virtHub</title>
@@ -19,15 +19,15 @@
                             <div class="control-button"><span class="control-button__icon icon-enter"></span><p class="control-button_text">Вход</p></div>
                             <div class="control-button"><span class="control-button__icon icon-clipboard"></span><p class="control-button_text">Регистрация</p></div>
                             <div class="control-button"><span class="control-button__icon icon-search"></span><p class="control-button_text">Поиск</p></div>
-                        </li>                
-                        <li class="menu-mobile__item">Форум</li>
-                        <li class="menu-mobile__item"><a class="main-link" href="index.html">Главная</a></li>
-                        <li class="menu-mobile__item">LiveЧат</li>
-                        <li class="menu-mobile__item">Вип модели</li>
-                        <li class="menu-mobile__item">Модели онлайн</li>
-                        <li class="menu-mobile__item">Контакты</li>
-                    </ul>   
-                </div>        
+                        </li><!--menu-mobile__item-->                
+                        <li class="menu-mobile__item">Форум</li><!--menu-mobile__item-->
+                        <li class="menu-mobile__item"><a class="main-link" href="index.html">Главная</a></li><!--menu-mobile__item-->
+                        <li class="menu-mobile__item">LiveЧат</li><!--menu-mobile__item-->
+                        <li class="menu-mobile__item">Вип модели</li><!--menu-mobile__item-->
+                        <li class="menu-mobile__item">Модели онлайн</li><!--menu-mobile__item-->
+                        <li class="menu-mobile__item">Контакты</li><!--menu-mobile__item-->
+                    </ul><!--menu-mobile-->   
+                </div><!--menu-wrapper-->        
             <!-- /Мобильное меню -->
             
             <!-- Класическое меню в шапке сайта -->
@@ -39,26 +39,27 @@
                         <span class="menu__line-2"></span>
                         <span class="menu__line-3"></span>
                     </a>
-                </li>
+                </li><!--menu__item-->
                 <!-- /Кнопка для мобильного меню -->               
-                <li class="menu__item menu__item-media"><a class="menu__link" href="#">Войти</a></li>
-                <li class="menu__item menu__item-media"><a class="menu__link" href="#"><span class="menu__excerpt">Live</span>Чат</a></li>                
-            </ul>
+                <li class="menu__item menu__item-media"><a class="menu__link" href="#">Войти</a></li><!--menu__item-->
+                <li class="menu__item menu__item-media"><a class="menu__link" href="#"><span class="menu__excerpt">Live</span>Чат</a></li><!--menu__item-->                
+            </ul><!--menu-->
             <!-- /Класическое меню в шапке сайта -->
-        </nav>
+        </nav><!--nav-->
         <!-- Блок  навигации по сайту -->
                 
         <!-- Логотип сайта -->
         <div class="logo logo-main">virt<span class="logo__excerpt">Hub</span></div>
         <!-- /Логотип сайта -->
-        <!-- Блок для формы поиска  -->
+        <!-- Блок для формы поиска и категорий -->
         <div class="search">            
             <form class="search__form">
                 <input class="search__input" type="text" placeholder="Поиск...">
                 <button class="search__btn icon-search"></button>
             </form> 
             <!-- Блок для категорий  -->
-            <div class="search__cat icon-list2">                
+            <div class="search__cat icon-list2">
+                <!-- Кнопка для категорий -->
             </div>
             <!-- /Блок для категорий  -->
             <div class="category-wrapper">
@@ -68,34 +69,43 @@
                     <li class="category__item">#Wanted</li>
                     <li class="category__item">#Livefor</li>
                     <li class="category__item">#Henryford</li>
-                </ul>
-            </div>                            
-        </div>
-        <!-- /Блок для формы поиска -->
-        
+                </ul><!--category-->
+            </div><!--category-wrapper-->                           
+        </div><!--search-->
+        <!-- /Блок для формы поиска и категорий-->        
     </header>
     <!-- /Блок header  -->
 
     <!-- Блок main -->
     <main class="main">
+
+        <!-- Главный заголовок сайта -->
         <h1 class="h1">Проверенные вирт модели для онлайн развлечений</h1>
+        <!-- Главный заголовок сайта -->
+
+        <!-- Подзаголовок сайта -->
         <h2 class="h2">Виртуальный секс онлайн по скайпу и вайберу</h2>
+        <!-- Подзаголовок сайта -->
+
         <!-- Закладки для категорий анкет -->
         <div class="tabs">
-            <!-- START|||Заголовки для категорий -->
+
+            <!--Заголовки для категорий -->
             <div class="tabs-title">
-                <div class="tabs-title__name"><span class="tabs-tittle__icon icon-connection"></span>Онлайн</div>
-                <div class="tabs-title__name"><span class="tabs-tittle__icon icon-power"></span>Новенькие</div>
-                <div class="tabs-title__name"><span class="tabs-tittle__icon icon-star-empty"></span>VIPМодели</div>
-            </div>
-            <!-- END|||Заголовки для категорий-->
-        </div>
+                <div class="tabs-title__name"><span class="tabs-tittle__icon icon-connection"></span>Онлайн</div><!--tabs-title__name-->
+                <div class="tabs-title__name"><span class="tabs-tittle__icon icon-power"></span>Новенькие</div><!--tabs-title__name-->
+                <div class="tabs-title__name"><span class="tabs-tittle__icon icon-star-empty"></span>VIPМодели</div><!--tabs-title__name-->
+            </div><!--tabs-title-->
+            <!--Заголовки для категорий-->
+
+        </div><!--tabs-->
+
         <!--||||Контент для категорий|||| -->
         <div class="tabs-content">
             <a class="tabs-content__inner profile-preview" href="profile.html">               
                 <div class="profile-preview__head">
                     <div class="logo logo-min">virt<span class="logo__excerpt logo__excerpt-min">Hub</span></div>                                                    
-                </div>            
+                </div><!--profile-preview__head-->            
                 <div class="profile-preview__photo">
                     <img class="profile-preview__img" src="img/mini/mini_2.png" alt="photo">
                     <div class="profile-preview__state">online...</div>
@@ -118,6 +128,7 @@
 
         <div class="tabs-content">           
         </div><!--tabs-content-->
+        <!-- Текст для СЕО -->
         <h3 class="h3">Случайный текст</h3>
         <p class="main__text">
 С другой стороны, рамки и место обучения кадров позволяет выполнить 
@@ -172,7 +183,8 @@
 поставленных задач. Таким образом, рамки и место обучения кадров играет важную роль    в 
 формировании новых предложений. Равном образом, реализация намеченных плановых     заданий 
 позволяет выполнить важные задания по разработке позиций, занимаемых     участниками в отношении поставленных задач. 
-</p>                       
+</p>
+<!-- Текст для СЕО -->                       
     </main>
     <!-- Блок main -->
 
@@ -188,8 +200,8 @@
                 <li class="footer-item__li"><a class="footer-item__link">Зарегестрироватся</a></li>
                 <li class="footer-item__li"><a class="footer-item__link">Контакты</a></li>
                 <li class="footer-item__li"><a class="footer-item__link">LiveЧат</a></li>
-            </ul>
-        </div>
+            </ul><!-- footer-item__content-->
+        </div><!-- footer-item -->
 
             <div class="footer-item">
                 <h5 class="footer-item__title">Популярные категории</h5>
@@ -199,8 +211,8 @@
                     <li class="footer-item__li"><a class="footer-item__link">Зарегестрироватся</a></li>
                     <li class="footer-item__li"><a class="footer-item__link">Попробуйте</a></li>
                     <li class="footer-item__li"><a class="footer-item__link">ключевые</a></li>
-                </ul>
-            </div>
+                </ul><!-- footer-item__content-->
+            </div><!-- footer-item -->
 
             <div class="footer-item">
                     <h5 class="footer-item__title">Сообщение администратору сайта</h5>
@@ -208,7 +220,7 @@
                         <textarea class="form__message" type="text" rows="5" placeholder="Введите сообщение"></textarea>
                         <button class="form__button">Отправить</button>
                     </form>
-            </div>
+            </div><!-- footer-item -->
         
         
         
